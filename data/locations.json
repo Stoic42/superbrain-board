@@ -12,6 +12,39 @@
       "icon": "👨‍🏫"
     },
     {
+      "id": "jiangxuning",
+      "name": "姜徐宁（小姜）",
+      "role": "项目领航员",
+      "location": "上海",
+      "coordinates": [31.23, 121.47],
+      "timezone": "UTC+8 (CST)",
+      "description": "项目领航员，负责AI工具使用指导和团队协调",
+      "status": "active",
+      "icon": "🧭"
+    },
+    {
+      "id": "linlu",
+      "name": "林潞（Linlu）",
+      "role": "Backup支持",
+      "location": "上海",
+      "coordinates": [31.23, 121.47],
+      "timezone": "UTC+8 (CST)",
+      "description": "Backup支持，负责团队管理和学员指导",
+      "status": "active",
+      "icon": "👨‍💼"
+    },
+    {
+      "id": "michael",
+      "name": "Michael（王佳梁）",
+      "role": "超脑总负责人",
+      "location": "上海",
+      "coordinates": [31.23, 121.47],
+      "timezone": "UTC+8 (CST)",
+      "description": "超脑总负责人，负责战略规划和整体管理",
+      "status": "active",
+      "icon": "👔"
+    },
+    {
       "id": "jianghaoxuan",
       "name": "蒋皓轩",
       "role": "学员 - 硬件组",
@@ -32,6 +65,116 @@
       "description": "硬件组协助，六边形战士",
       "status": "active",
       "icon": "👨‍🎓"
+    },
+    {
+      "id": "zhaotianlang",
+      "name": "赵天朗",
+      "role": "学员 - ID设计组",
+      "location": "北京",
+      "coordinates": [39.9, 116.4],
+      "timezone": "UTC+8 (CST)",
+      "description": "ID设计组，工业设计建模，行动力强，领导力强",
+      "status": "active",
+      "icon": "👨‍🎨"
+    },
+    {
+      "id": "zhangshaoqing",
+      "name": "张绍卿",
+      "role": "学员 - 软件组 | 团队组长",
+      "location": "未知",
+      "coordinates": [31.23, 121.47],
+      "timezone": "UTC+8 (CST)",
+      "description": "软件组团队组长，领导力强，演讲解说能力",
+      "status": "active",
+      "icon": "👨‍💻"
+    },
+    {
+      "id": "dengzixiang",
+      "name": "邓子翔（Mike）",
+      "role": "学员 - 软件组",
+      "location": "未知",
+      "coordinates": [31.23, 121.47],
+      "timezone": "UTC+8 (CST)",
+      "description": "软件组前端开发，AI工具专家",
+      "status": "active",
+      "icon": "👨‍💻"
+    },
+    {
+      "id": "linhongyi",
+      "name": "林弘毅",
+      "role": "学员 - ID设计组",
+      "location": "未知",
+      "coordinates": [31.23, 121.47],
+      "timezone": "UTC+8 (CST)",
+      "description": "ID设计组新成员，协助赵天朗",
+      "status": "active",
+      "icon": "👨‍🎓"
+    },
+    {
+      "id": "gaoyunyi",
+      "name": "高云仪",
+      "role": "学员 - 共学组队长",
+      "location": "上海",
+      "coordinates": [31.23, 121.47],
+      "timezone": "UTC+8 (CST)",
+      "description": "游戏化线上共学组队长，外向开朗，节奏感好",
+      "status": "active",
+      "icon": "👩‍🎓"
+    },
+    {
+      "id": "taoyijia",
+      "name": "陶奕嘉",
+      "role": "学员 - 共学组",
+      "location": "未知",
+      "coordinates": [31.23, 121.47],
+      "timezone": "UTC+8 (CST)",
+      "description": "游戏化线上共学组，硬件创新，有创造力",
+      "status": "active",
+      "icon": "👨‍🎓"
+    },
+    {
+      "id": "panyupeng",
+      "name": "潘玉鹏（预见）",
+      "role": "项目导师",
+      "location": "未知",
+      "coordinates": [31.23, 121.47],
+      "timezone": "UTC+8 (CST)",
+      "description": "游戏化线上共学组导师，负责软件开发教学和架构设计",
+      "status": "active",
+      "icon": "👨‍🏫"
+    },
+    {
+      "id": "aiken",
+      "name": "Aiken",
+      "role": "项目领航员",
+      "location": "上海",
+      "coordinates": [31.23, 121.47],
+      "timezone": "UTC+8 (CST)",
+      "description": "游戏化线上共学组领航员，负责技术指导和工具配置",
+      "status": "active",
+      "icon": "🧭"
+    },
+    {
+      "id": "chunyang",
+      "name": "春杨（Umi）",
+      "role": "项目协调员",
+      "location": "未知",
+      "coordinates": [31.23, 121.47],
+      "timezone": "UTC+8 (CST)",
+      "description": "项目协调员，负责学员沟通和项目协调",
+      "status": "active",
+      "icon": "👨‍💼"
+    },
+    {
+      "id": "christina",
+      "name": "Christina",
+      "role": "Build in Public记录官",
+      "location": "未知",
+      "coordinates": [31.23, 121.47],
+      "timezone": "UTC+8 (CST)",
+      "description": "Build in Public记录官，负责全程记录和内容运营",
+      "status": "active",
+      "icon": "📝"
     },
     {
       "id": "lele",
