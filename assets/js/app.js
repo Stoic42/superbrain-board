@@ -1,15 +1,21 @@
 // GitHub Pages 看板 JavaScript
 
+// 全局变量
+let mapInstance = null;
+let locationsData = null;
+
 // 数据加载
 async function loadData() {
     try {
-        const [projects, teams, progress, board] = await Promise.all([
+        const [projects, teams, progress, board, locations] = await Promise.all([
             fetch('data/projects.json').then(r => r.json()).catch(() => ({ projects: [] })),
             fetch('data/teams.json').then(r => r.json()).catch(() => ({ teams: [] })),
             fetch('data/progress.json').then(r => r.json()).catch(() => ({})),
-            fetch('data/board.json').then(r => r.json()).catch(() => ({ columns: [] }))
+            fetch('data/board.json').then(r => r.json()).catch(() => ({ columns: [] })),
+            fetch('data/locations.json').then(r => r.json()).catch(() => ({ locations: [] }))
         ]);
         
+        locationsData = locations;
         renderBoard(board);
         renderProjects(projects);
         renderTeams(teams);
@@ -168,6 +174,121 @@ async function loadBlogPosts() {
     }
 }
 
+// 地图渲染
+function renderMap() {
+    const container = document.getElementById('map-container');
+    if (!container) return;
+    
+    // 如果地图已初始化，先销毁
+    if (mapInstance) {
+        mapInstance.remove();
+        mapInstance = null;
+    }
+    
+    if (!locationsData || !locationsData.locations || locationsData.locations.length === 0) {
+        container.innerHTML = '<div class="loading">暂无位置数据，请在 GitHub 编辑 data/locations.json</div>';
+        return;
+    }
+    
+    // 初始化地图（中国中心）
+    mapInstance = L.map('map-container').setView([31.0, 120.0], 6);
+    
+    // 添加地图图层（使用 OpenStreetMap）
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+        maxZoom: 18
+    }).addTo(mapInstance);
+    
+    // 添加标记点
+    const bounds = [];
+    locationsData.locations.forEach(location => {
+        if (location.coordinates && location.coordinates.length === 2) {
+            const [lat, lng] = location.coordinates;
+            bounds.push([lat, lng]);
+            
+            // 创建自定义图标
+            const icon = L.divIcon({
+                className: 'custom-marker',
+                html: `<div style="
+                    background: var(--text);
+                    color: white;
+                    border-radius: 50%;
+                    width: 40px;
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 20px;
+                    border: 3px solid white;
+                    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+                ">${location.icon || '📍'}</div>`,
+                iconSize: [40, 40],
+                iconAnchor: [20, 20]
+            });
+            
+            // 创建弹出窗口内容
+            const popupContent = `
+                <div style="min-width: 200px;">
+                    <h3 style="margin: 0 0 8px 0; font-size: 16px; font-weight: 600;">${escapeHtml(location.name)}</h3>
+                    <p style="margin: 0 0 4px 0; color: var(--text-secondary); font-size: 14px;">${escapeHtml(location.role)}</p>
+                    <p style="margin: 0 0 8px 0; color: var(--text-secondary); font-size: 12px;">📍 ${escapeHtml(location.location)}</p>
+                    ${location.description ? `<p style="margin: 8px 0 0 0; font-size: 13px; line-height: 1.5;">${escapeHtml(location.description)}</p>` : ''}
+                </div>
+            `;
+            
+            // 添加标记
+            const marker = L.marker([lat, lng], { icon: icon })
+                .addTo(mapInstance)
+                .bindPopup(popupContent);
+        }
+    });
+    
+    // 调整地图视图以包含所有标记
+    if (bounds.length > 0) {
+        mapInstance.fitBounds(bounds, { padding: [50, 50] });
+    }
+    
+    // 渲染图例
+    renderMapLegend();
+}
+
+// 地图图例
+function renderMapLegend() {
+    const legendContainer = document.getElementById('map-legend');
+    if (!legendContainer || !locationsData) return;
+    
+    legendContainer.innerHTML = `
+        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 16px;">
+            ${locationsData.locations.map(location => `
+                <div style="
+                    background: var(--card-bg);
+                    border: 1px solid var(--border-light);
+                    border-radius: 8px;
+                    padding: 16px;
+                    display: flex;
+                    align-items: center;
+                    gap: 12px;
+                ">
+                    <div style="
+                        font-size: 24px;
+                        width: 40px;
+                        height: 40px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background: var(--surface);
+                        border-radius: 50%;
+                    ">${location.icon || '📍'}</div>
+                    <div style="flex: 1;">
+                        <div style="font-weight: 600; margin-bottom: 4px;">${escapeHtml(location.name)}</div>
+                        <div style="font-size: 12px; color: var(--text-secondary);">${escapeHtml(location.location)}</div>
+                    </div>
+                </div>
+            `).join('')}
+        </div>
+    `;
+}
+
 // 标签页切换
 function initTabs() {
     const tabs = document.querySelectorAll('.nav-tab');
@@ -186,6 +307,10 @@ function initTabs() {
                 content.classList.remove('active');
                 if (content.id === targetTab) {
                     content.classList.add('active');
+                    // 如果切换到地图标签，初始化地图
+                    if (targetTab === 'map' && typeof L !== 'undefined') {
+                        setTimeout(() => renderMap(), 100);
+                    }
                 }
             });
         });

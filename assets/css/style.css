@@ -365,6 +365,22 @@ body {
     color: var(--text-secondary);
 }
 
+/* Map */
+#map-container {
+    width: 100%;
+    background: var(--surface);
+}
+
+.custom-marker {
+    background: transparent !important;
+    border: none !important;
+}
+
+/* Map Legend */
+#map-legend {
+    margin-top: 20px;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .header h1 {
@@ -386,6 +402,10 @@ body {
     .projects-grid,
     .teams-container {
         grid-template-columns: 1fr;
+    }
+
+    #map-container {
+        height: 400px !important;
     }
 }
 

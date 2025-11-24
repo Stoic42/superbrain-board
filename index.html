@@ -27,6 +27,7 @@
         <button class="nav-tab active" data-tab="board">📋 看板</button>
         <button class="nav-tab" data-tab="projects">📁 项目</button>
         <button class="nav-tab" data-tab="team">👥 团队</button>
+        <button class="nav-tab" data-tab="map">🗺️ 地图</button>
         <button class="nav-tab" data-tab="blog">📝 博客</button>
     </nav>
 
@@ -54,6 +55,13 @@
             </div>
         </section>
 
+        <!-- 地图视图 -->
+        <section id="map" class="tab-content">
+            <h2>团队成员位置</h2>
+            <div id="map-container" style="height: 600px; border-radius: 12px; overflow: hidden; border: 1px solid var(--border-light);"></div>
+            <div id="map-legend" style="margin-top: 20px;"></div>
+        </section>
+
         <!-- 博客列表 -->
         <section id="blog" class="tab-content">
             <h2>最新动态</h2>
@@ -76,6 +84,8 @@
     </footer>
 
     <!-- 外部库 -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/marked@9.1.6/marked.min.js"></script>
     <script src="assets/js/app.js"></script>
 </body>
