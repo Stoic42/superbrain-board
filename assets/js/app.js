@@ -231,7 +231,8 @@ function renderMap() {
                 <div style="min-width: 200px;">
                     <h3 style="margin: 0 0 8px 0; font-size: 16px; font-weight: 600;">${escapeHtml(location.name)}</h3>
                     <p style="margin: 0 0 4px 0; color: var(--text-secondary); font-size: 14px;">${escapeHtml(location.role)}</p>
-                    <p style="margin: 0 0 8px 0; color: var(--text-secondary); font-size: 12px;">📍 ${escapeHtml(location.location)}</p>
+                    <p style="margin: 0 0 4px 0; color: var(--text-secondary); font-size: 12px;">📍 ${escapeHtml(location.location)}</p>
+                    ${location.timezone ? `<p style="margin: 0 0 8px 0; color: var(--text-secondary); font-size: 11px;">🕐 ${escapeHtml(location.timezone)}</p>` : ''}
                     ${location.description ? `<p style="margin: 8px 0 0 0; font-size: 13px; line-height: 1.5;">${escapeHtml(location.description)}</p>` : ''}
                 </div>
             `;
@@ -281,7 +282,8 @@ function renderMapLegend() {
                     ">${location.icon || '📍'}</div>
                     <div style="flex: 1;">
                         <div style="font-weight: 600; margin-bottom: 4px;">${escapeHtml(location.name)}</div>
-                        <div style="font-size: 12px; color: var(--text-secondary);">${escapeHtml(location.location)}</div>
+                        <div style="font-size: 12px; color: var(--text-secondary);">📍 ${escapeHtml(location.location)}</div>
+                        ${location.timezone ? `<div style="font-size: 11px; color: var(--text-tertiary); margin-top: 2px;">🕐 ${escapeHtml(location.timezone)}</div>` : ''}
                     </div>
                 </div>
             `).join('')}
