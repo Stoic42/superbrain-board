@@ -1,0 +1,318 @@
+{
+  "overallProgress": {
+    "percentage": 28,
+    "description": "项目整体进度",
+    "lastUpdated": "2024-11-06"
+  },
+  "milestones": [
+    {
+      "id": "startup_meeting",
+      "name": "项目启动会议",
+      "description": "团队分工确认，技术栈确定，项目背景介绍",
+      "date": "2024-10-26",
+      "status": "completed",
+      "progress": 100
+    },
+    {
+      "id": "environment_setup",
+      "name": "环境配置阶段",
+      "description": "Git和Cursor IDE安装配置，解决技术环境问题",
+      "date": "2024-10-30",
+      "status": "in_progress",
+      "progress": 50
+    },
+    {
+      "id": "project_research",
+      "name": "项目调研阶段",
+      "description": "深入研究参考产品和Alien Agent功能",
+      "date": "2024-11-05",
+      "status": "planned",
+      "progress": 0
+    },
+    {
+      "id": "prototype_development",
+      "name": "原型开发阶段",
+      "description": "硬件原型制作和基础功能实现",
+      "date": "2024-11-20",
+      "status": "planned",
+      "progress": 0
+    }
+  ],
+  "tasks": [
+    {
+      "id": "startup_complete",
+      "text": "项目启动会议完成",
+      "priority": "high",
+      "status": "completed",
+      "assignee": "all",
+      "dueDate": "2024-10-26"
+    },
+    {
+      "id": "hardware_board_ordered",
+      "text": "硬件组开发板采购",
+      "priority": "high",
+      "status": "completed",
+      "assignee": "jianghaoxuan",
+      "dueDate": "2024-11-02",
+      "completedDate": "2024-11-02"
+    },
+    {
+      "id": "student_workflow_design",
+      "text": "学生共学流程（Process）设计",
+      "priority": "high",
+      "status": "pending",
+      "assignee": "jiangxuning+linlu",
+      "dueDate": "待定",
+      "description": "包含站会（Check-in）、Demo Day、复盘环节设计，与Christina案例分享机制整合"
+    },
+    {
+      "id": "navigator_guideline",
+      "text": "领航员指南（Guideline）制定",
+      "priority": "high",
+      "status": "pending",
+      "assignee": "aiken",
+      "dueDate": "待定",
+      "description": "整理11.03复盘会确定的领航员角色定位、职责（该做什么，不该做什么）"
+    },
+    {
+      "id": "protocol_confirmation",
+      "text": "硬件组与软件组确认通信协议",
+      "priority": "high",
+      "status": "in_progress",
+      "assignee": "zhangshaoqing+dengzixiang",
+      "dueDate": "2024-11-06",
+      "description": "确定通信协议（HTTP/WebSocket/MQTT），由软件组决定并告诉硬件组"
+    },
+    {
+      "id": "tech_stack_decision",
+      "text": "软件组确定技术选型",
+      "priority": "high",
+      "status": "in_progress",
+      "assignee": "zhangshaoqing+dengzixiang",
+      "dueDate": "2024-11-06",
+      "description": "确定后端技术栈（Python/Next.js等）"
+    },
+    {
+      "id": "account_binding_design",
+      "text": "软件组设计账号绑定方案",
+      "priority": "high",
+      "status": "pending",
+      "assignee": "zhangshaoqing+dengzixiang",
+      "dueDate": "2024-11-06",
+      "description": "设计新用户绑定账号和设备方案（扫码/验证码/蓝牙配对等）"
+    },
+    {
+      "id": "first_print",
+      "text": "外观设计组首次打印（3-5天）",
+      "priority": "high",
+      "status": "in_progress",
+      "assignee": "zhaotianlang+linhongyi",
+      "dueDate": "2024-11-07",
+      "description": "3-5天内完成外观设计并首次打印（高优先级）"
+    },
+    {
+      "id": "homework_reminder",
+      "text": "督促未完成自我介绍作业",
+      "priority": "high",
+      "status": "pending",
+      "assignee": "linlu",
+      "dueDate": "2024-10-28"
+    },
+    {
+      "id": "training_organization",
+      "text": "组织Cursor和Git使用培训",
+      "priority": "medium",
+      "status": "pending",
+      "assignee": "jiangxuning",
+      "dueDate": "2024-11-02"
+    },
+    {
+      "id": "tech_support_group",
+      "text": "建立技术问题快速响应群",
+      "priority": "medium",
+      "status": "pending",
+      "assignee": "linlu",
+      "dueDate": "2024-11-02"
+    },
+    {
+      "id": "discussion_process",
+      "text": "设计标准化的分组讨论流程",
+      "priority": "low",
+      "status": "pending",
+      "assignee": "jiangxuning",
+      "dueDate": "2024-11-05"
+    },
+    {
+      "id": "project_research",
+      "text": "深入项目调研和功能设计",
+      "priority": "medium",
+      "status": "pending",
+      "assignee": "all",
+      "dueDate": "2024-11-05"
+    }
+  ],
+  "activities": [
+    {
+      "id": "review_meeting_1103",
+      "date": "2024-11-03",
+      "type": "meeting",
+      "title": "11.03第三期复盘会 - 教育哲学转向",
+      "description": "导师组复盘会，确立核心教育理念：'学员状态不是领航员责任'、角色职责重新定义、新增流程机制（站会、Demo Day、案例分享）",
+      "participants": ["michael_core", "jiangxuning", "linlu", "aiken", "haodehong", "panyupeng", "chunyang"],
+      "status": "completed"
+    },
+    {
+      "id": "colearning_1102",
+      "date": "2024-11-02",
+      "type": "colearning",
+      "title": "11.02共学会议 - 关键决策确认",
+      "description": "各组Roadmap对齐，开发板采购确认（微雪ESP32-S3 3.5寸，147元），高优先级任务明确（通信协议、技术选型、账号绑定、首次打印）",
+      "participants": ["all"],
+      "status": "completed"
+    },
+    {
+      "id": "hardware_board_ordered",
+      "date": "2024-11-02",
+      "type": "milestone",
+      "title": "硬件组开发板采购完成",
+      "description": "蒋皓轩完成开发板采购（微雪ESP32-S3-Touch-LCD-3.5，不带外壳，147元），等待到货验证",
+      "participants": ["jianghaoxuan"],
+      "status": "completed"
+    },
+    {
+      "id": "review_meeting_1027",
+      "date": "2024-10-27",
+      "type": "meeting",
+      "title": "完成10.27小姜打字复盘会议",
+      "description": "团队内部复盘会议，讨论项目进展和问题",
+      "participants": ["jiangxuning", "linlu", "haodehong"],
+      "status": "completed"
+    },
+    {
+      "id": "team_division",
+      "date": "2024-10-26",
+      "type": "milestone",
+      "title": "团队分工确认：软件组、ID设计组、硬件组",
+      "description": "完成团队分组和角色分配",
+      "participants": ["all"],
+      "status": "completed"
+    },
+    {
+      "id": "github_training",
+      "date": "2024-10-26",
+      "type": "training",
+      "title": "GitHub协作工具培训完成",
+      "description": "完成GitHub和Cursor IDE使用培训",
+      "participants": ["all"],
+      "status": "completed"
+    },
+    {
+      "id": "project_background",
+      "date": "2024-10-26",
+      "type": "presentation",
+      "title": "项目背景与挑战声明讲解",
+      "description": "详细讲解项目背景和挑战要求",
+      "participants": ["all"],
+      "status": "completed"
+    },
+    {
+      "id": "tech_issues",
+      "date": "2024-10-26",
+      "type": "issue",
+      "title": "发现技术环境配置问题",
+      "description": "蒋皓轩等成员Git配置遇到困难",
+      "participants": ["jianghaoxuan", "jiangxuning"],
+      "status": "in_progress"
+    },
+    {
+      "id": "homework_stats",
+      "date": "2024-10-26",
+      "type": "statistics",
+      "title": "作业完成情况统计：1/6完成",
+      "description": "统计显示作业完成率仅17%",
+      "participants": ["all"],
+      "status": "completed"
+    },
+    {
+      "id": "time_adjustment",
+      "date": "2024-10-26",
+      "type": "suggestion",
+      "title": "德宏导师提出时间调整建议",
+      "description": "建议调整共学时间安排",
+      "participants": ["haodehong"],
+      "status": "pending"
+    },
+    {
+      "id": "goal_setting",
+      "date": "2024-10-26",
+      "type": "goal",
+      "title": "确定"保银冲金"目标",
+      "description": "团队目标设定为争取银牌或金牌",
+      "participants": ["all"],
+      "status": "completed"
+    }
+  ],
+  "alerts": [
+    {
+      "id": "philosophy_shift",
+      "type": "info",
+      "title": "教育哲学转向 - 重要更新",
+      "message": "11.03复盘会确立核心理念：'学员状态不是领航员责任'。角色重新定义：导师被动支持、领航员主动引导、队长第一责任人。新增流程：站会、Demo Day、案例分享。",
+      "priority": "high",
+      "date": "2024-11-03",
+      "status": "active"
+    },
+    {
+      "id": "critical_tasks_week3",
+      "type": "warning",
+      "title": "Week 3 关键任务",
+      "message": "硬件组：通信协议确认、技术选型确定、账号绑定方案设计（高优先级）。外观设计组：3-5天内完成首次打印（高优先级）。软件组：技术选型、通信协议确定、账号绑定方案设计。",
+      "priority": "high",
+      "date": "2024-11-02",
+      "status": "active"
+    },
+    {
+      "id": "board_arrival",
+      "type": "info",
+      "title": "开发板采购完成",
+      "message": "硬件组开发板已下单（微雪ESP32-S3 3.5寸，147元），等待到货验证。预计3-5天到货。",
+      "priority": "medium",
+      "date": "2024-11-02",
+      "status": "active"
+    },
+    {
+      "id": "homework_completion",
+      "type": "info",
+      "title": "作业完成提醒",
+      "message": "当前作业完成率仅17%，需要督促未完成成员尽快提交。",
+      "priority": "medium",
+      "date": "2024-10-26",
+      "status": "active"
+    },
+    {
+      "id": "team_goal",
+      "type": "success",
+      "title": "团队目标",
+      "message": "保银冲金，争取5000元大奖！",
+      "priority": "low",
+      "date": "2024-10-26",
+      "status": "active"
+    }
+  ],
+  "statistics": {
+    "totalTasks": 13,
+    "completedTasks": 2,
+    "pendingTasks": 8,
+    "inProgressTasks": 3,
+    "highPriorityTasks": 8,
+    "mediumPriorityTasks": 3,
+    "lowPriorityTasks": 1,
+    "completionRate": 15.4,
+    "homeworkCompletionRate": 83,
+    "environmentSetupRate": 83
+  }
+}
+
+
+
+

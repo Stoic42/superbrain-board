@@ -1,0 +1,270 @@
+{
+  "projects": [
+    {
+      "id": "astropager",
+      "name": "星际寻呼机 (AstroPager)",
+      "description": "Alien Agent世界观生态的重要硬件扩展，提升用户的代入感、娱乐体验和随身学习价值",
+      "type": "hardware",
+      "status": "in_progress",
+      "progress": 25,
+      "startDate": "2024-10-18",
+      "endDate": "2024-12-18",
+      "team": "ai_hardware",
+      "challenges": [
+        {
+          "level": "bronze",
+          "amount": 1000,
+          "description": "实现核心功能，设备可用",
+          "requirements": [
+            "Alien Agent账号联通",
+            "回信通知功能",
+            "紧急问题解答",
+            "物理按键交互",
+            "WiFi联网功能"
+          ]
+        },
+        {
+          "level": "silver",
+          "amount": 3000,
+          "description": "核心功能完整 + 良好体验",
+          "requirements": [
+            "包含铜牌所有功能",
+            "完整账号同步",
+            "语音输入功能",
+            "多种通知方式",
+            "美观UI设计",
+            "创新功能"
+          ]
+        },
+        {
+          "level": "gold",
+          "amount": 5000,
+          "description": "完整功能 + 创新亮点",
+          "requirements": [
+            "包含银牌所有功能",
+            "2-3个创新功能",
+            "沉浸式交互设计",
+            "智能化学习功能",
+            "科幻感硬件设计",
+            "商业化潜力"
+          ]
+        }
+      ],
+      "techStack": [
+        "ESP32",
+        "Arduino IDE",
+        "WiFi",
+        "蓝牙",
+        "语音识别",
+        "3D建模",
+        "Fusion 360",
+        "Git",
+        "Cursor IDE",
+        "GitHub",
+        "Alien Agent API"
+      ],
+      "milestones": [
+        {
+          "id": "startup",
+          "name": "项目启动会议",
+          "description": "团队分工确认，技术栈确定，项目背景介绍",
+          "date": "2024-10-26",
+          "status": "completed"
+        },
+        {
+          "id": "environment",
+          "name": "环境配置阶段",
+          "description": "Git和Cursor IDE安装配置，解决技术环境问题",
+          "date": "2024-10-30",
+          "status": "completed"
+        },
+        {
+          "id": "colearning-11-02",
+          "name": "11.2共学会议",
+          "description": "各组Roadmap对齐，开发板采购确认，技术方案讨论",
+          "date": "2024-11-02",
+          "status": "completed"
+        },
+        {
+          "id": "review-meeting-1103",
+          "name": "11.03第三期复盘会 - 教育哲学转向",
+          "description": "确立核心教育理念：'学员状态不是领航员责任'。角色重新定义：导师被动支持、领航员主动引导、队长第一责任人。新增流程：站会、Demo Day、案例分享。",
+          "date": "2024-11-03",
+          "status": "completed"
+        },
+        {
+          "id": "hardware-protocol",
+          "name": "通信协议确认",
+          "description": "硬件组与软件组确认通信协议（HTTP/WebSocket/MQTT）",
+          "date": "2024-11-06",
+          "status": "in_progress"
+        },
+        {
+          "id": "research",
+          "name": "项目调研阶段",
+          "description": "深入研究参考产品和Alien Agent功能",
+          "date": "2024-11-05",
+          "status": "planned"
+        },
+        {
+          "id": "prototype",
+          "name": "原型开发阶段",
+          "description": "硬件原型制作和基础功能实现",
+          "date": "2024-11-20",
+          "status": "planned"
+        }
+      ]
+    },
+    {
+      "id": "ai_skill_tree",
+      "name": "AI技能树学习平台",
+      "description": "打造一个游戏化的在线学习系统，让30-40名黑客松学员在2周内通过自主学习、项目实践、获得勋章的方式，掌握必备技能(AI工具、项目管理、设计思维等)",
+      "type": "software",
+      "status": "in_progress",
+      "progress": 45,
+      "startDate": "2024-10-18",
+      "endDate": "2024-12-18",
+      "team": "online_learning",
+      "coreFeatures": [
+        {
+          "name": "课程管理",
+          "description": "管理员可添加课程，学员浏览课程并跳转到外部学习资源"
+        },
+        {
+          "name": "测试与认证",
+          "description": "学员提交作品，管理员审核后自动发放勋章"
+        },
+        {
+          "name": "勋章系统",
+          "description": "每门课程对应一个勋章，可自定义名称、图标、描述"
+        },
+        {
+          "name": "技能树可视化",
+          "description": "以树状结构展示所有课程和勋章，支持分支设计"
+        }
+      ],
+      "learningPaths": [
+        {
+          "level": "基础层",
+          "skills": ["Prompt工程入门"]
+        },
+        {
+          "level": "应用层",
+          "skills": ["AI对话助手", "AI搜索引擎"]
+        },
+        {
+          "level": "创作层",
+          "skills": ["AI文案创作", "AI绘画工具", "AI知识管理"]
+        },
+        {
+          "level": "专业层",
+          "skills": ["AI编程助手", "AI视频创作"]
+        },
+        {
+          "level": "高级层",
+          "skills": ["高级编程工具", "AI Agent开发"]
+        }
+      ],
+      "features": [
+        "游戏化学习体验",
+        "技能树进阶系统",
+        "AI工具实战应用",
+        "个性化学习路径"
+      ],
+      "creativeSpace": [
+        "激励机制：排行榜、积分、等级、连续学习天数、成就系统",
+        "技能树设计：可视化创意（星空图、地图、游戏关卡等）",
+        "社交互动：讨论区、评论、学习小组、互助问答",
+        "界面风格：科技感、游戏风、简约风，自由发挥",
+        "智能功能：AI助手、个性化推荐、学习数据洞察"
+      ],
+      "rewards": [
+        {
+          "level": "铜牌挑战",
+          "amount": "¥1,000/队",
+          "requirements": [
+            "课程管理功能",
+            "测试提交和审核",
+            "勋章发放系统",
+            "基础技能树展示",
+            "学员和管理员功能"
+          ]
+        },
+        {
+          "level": "银牌挑战",
+          "amount": "¥3,000/队",
+          "requirements": [
+            "包含铜牌所有功能",
+            "美观的技能树可视化",
+            "响应式设计",
+            "激励机制（排行榜等）",
+            "统一界面风格"
+          ]
+        },
+        {
+          "level": "金牌挑战",
+          "amount": "¥5,000/队",
+          "requirements": [
+            "包含银牌所有功能",
+            "2-3个创新功能",
+            "独特技能树设计",
+            "智能化功能",
+            "沉浸式游戏体验"
+          ]
+        }
+      ],
+      "milestones": [
+        {
+          "id": "startup",
+          "name": "项目启动",
+          "description": "及时纠正畏难情绪，让大家马上动手看到成果",
+          "date": "2024-10-26",
+          "status": "completed"
+        },
+        {
+          "id": "development",
+          "name": "功能开发",
+          "description": "高云仪现场完成"个人主页"和"排行榜"两个功能",
+          "date": "2024-10-26",
+          "status": "completed"
+        },
+        {
+          "id": "team_building",
+          "name": "团队建设",
+          "description": "高云仪当选队长，团队有了主心骨",
+          "date": "2024-10-26",
+          "status": "completed"
+        },
+        {
+          "id": "collaboration",
+          "name": "团队协作优化",
+          "description": "解决团队分工不均问题，建立真正的团队协作模式",
+          "date": "2024-10-27",
+          "status": "in_progress"
+        },
+        {
+          "id": "colearning-11-02",
+          "name": "11.2共学会议 - 抽卡系统开发",
+          "description": "抽卡系统开发（Lovable原型 → Cursor开发）。陶奕嘉成功生成功能完备Demo，包括差异化爆率设计。发现工具风险（Lovable额度用完）和教学方式问题（Aiken包办过多），导师介入提供元反馈，强调核心目标是培养AI协作能力",
+          "date": "2024-11-02",
+          "status": "completed"
+        },
+        {
+          "id": "navigator-improvement",
+          "name": "领航员角色定位优化",
+          "description": "基于Aiken案例，建立领航员行为标准和监督机制，从"包办"转向"引导"，强化AI优先原则",
+          "date": "2024-11-03",
+          "status": "in_progress"
+        }
+      ]
+    }
+  ],
+  "overview": {
+    "totalProjects": 2,
+    "totalMembers": 8,
+    "totalMentors": 3,
+    "overallProgress": 32.5,
+    "completionRate": 83,
+    "environmentSetupRate": 83
+  }
+}

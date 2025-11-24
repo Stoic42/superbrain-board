@@ -1,0 +1,29 @@
+{
+  "columns": [
+    {
+      "id": "todo",
+      "name": "待办",
+      "cards": [
+        {
+          "id": "card-1",
+          "title": "欢迎使用看板",
+          "description": "这是第一个任务卡片，你可以在 GitHub 编辑 data/board.json 来添加更多任务",
+          "label": "示例",
+          "assignee": "管理员",
+          "dueDate": "2025-12-01"
+        }
+      ]
+    },
+    {
+      "id": "in-progress",
+      "name": "进行中",
+      "cards": []
+    },
+    {
+      "id": "done",
+      "name": "已完成",
+      "cards": []
+    }
+  ]
+}
+

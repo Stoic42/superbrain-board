@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>">
+    <title>超脑共创看板</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>🧠 超脑共创看板</h1>
+            <p class="subtitle">通过 GitHub 协作编辑 · 自动部署</p>
+            <div class="header-actions">
+                <a href="https://github.com/Stoic42/superbrain-board" class="btn btn-secondary" target="_blank">
+                    📝 在 GitHub 编辑
+                </a>
+                <a href="https://superbrain.ton-ton.fun" class="btn btn-secondary" target="_blank">
+                    🚀 完整平台
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <nav class="nav-tabs">
+        <button class="nav-tab active" data-tab="board">📋 看板</button>
+        <button class="nav-tab" data-tab="projects">📁 项目</button>
+        <button class="nav-tab" data-tab="team">👥 团队</button>
+        <button class="nav-tab" data-tab="blog">📝 博客</button>
+    </nav>
+
+    <main class="container">
+        <!-- 看板视图 -->
+        <section id="board" class="tab-content active">
+            <div class="board-container" id="board-container">
+                <div class="loading">加载中...</div>
+            </div>
+        </section>
+
+        <!-- 项目展示 -->
+        <section id="projects" class="tab-content">
+            <h2>项目总览</h2>
+            <div class="projects-grid" id="projects-grid">
+                <div class="loading">加载中...</div>
+            </div>
+        </section>
+
+        <!-- 团队管理 -->
+        <section id="team" class="tab-content">
+            <h2>团队成员</h2>
+            <div class="teams-container" id="teams-container">
+                <div class="loading">加载中...</div>
+            </div>
+        </section>
+
+        <!-- 博客列表 -->
+        <section id="blog" class="tab-content">
+            <h2>最新动态</h2>
+            <div class="blog-list" id="blog-list">
+                <div class="loading">加载中...</div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>
+                通过 <a href="https://github.com/Stoic42/superbrain-board" target="_blank">GitHub</a> 编辑内容 · 
+                自动部署到 <a href="https://pages.github.com" target="_blank">GitHub Pages</a>
+            </p>
+            <p class="footer-note">
+                性能不足时，请访问 <a href="https://superbrain.ton-ton.fun" target="_blank">superbrain.ton-ton.fun</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- 外部库 -->
+    <script src="https://cdn.jsdelivr.net/npm/marked@9.1.6/marked.min.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
+

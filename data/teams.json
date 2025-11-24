@@ -1,0 +1,385 @@
+{
+  "teams": [
+    {
+      "id": "ai_hardware",
+      "name": "AI智能随身硬件组",
+      "description": "负责星际寻呼机硬件项目的开发",
+      "members": [
+        {
+          "id": "zhaotianlang",
+          "name": "赵天朗",
+          "age": 13,
+          "role": "ID设计组 - 工业设计建模",
+          "skills": ["3D建模", "篆刻", "滑雪", "领导力强"],
+          "status": "pending",
+          "avatar": "赵",
+          "description": "行动力强，领导力强，善于表达",
+          "hobbies": ["赛车(F1 WEC GT)", "三角洲行动"],
+          "achievements": ["篆刻海淀区艺术节一等奖", "basi系统6级滑雪"],
+          "github": "Ztl-lec",
+          "githubStatus": "invited",
+          "aliases": {
+            "wechat": ["赵天朗"],
+            "github": "Ztl-lec",
+            "codename": "lec",
+            "projectGroup": "赵天朗"
+          },
+          "avatars": {
+            "wechat": "intel/超脑AI线上黑客松1_5-星际寻呼机项目(50196786440@chatroom)/avatar/wxid_27hwu7lhgx2v22.png",
+            "github": "https://github.com/Ztl-lec.png",
+            "fallback": "赵"
+          }
+        },
+        {
+          "id": "jianghaoxuan",
+          "name": "蒋皓轩",
+          "age": 14,
+          "role": "硬件组 - 嵌入式开发",
+          "skills": ["Arduino/Raspberry Pi", "STM32", "多次黑客松经验"],
+          "status": "offline",
+          "avatar": "蒋",
+          "description": "硬件开发专家，运动能力强",
+          "hobbies": ["篮球校队", "羽毛球", "潜水", "徒步", "围棋3段"],
+          "achievements": ["基于STM32搭建多功能小车", "篮球校队市第七", "潜水ow证"],
+          "issues": ["Git环境配置困难", "需要一对一技术支持"],
+          "github": "max201110",
+          "githubStatus": "invited",
+          "aliases": {
+            "wechat": ["轩"],
+            "github": "max201110",
+            "projectGroup": "轩"
+          },
+          "avatars": {
+            "wechat": "intel/超脑AI线上黑客松1_5-星际寻呼机项目(50196786440@chatroom)/avatar/wxid_agwk9frvhmyk22.png",
+            "github": "https://github.com/max201110.png",
+            "fallback": "蒋"
+          }
+        },
+        {
+          "id": "zhangshaoqing",
+          "name": "张绍卿",
+          "age": 13,
+          "role": "软件组 - 软件开发 | 团队组长",
+          "skills": ["雅思7.5", "数学俱乐部", "游戏开发", "领导力"],
+          "status": "active",
+          "avatar": "张",
+          "description": "E人，领导力强，演讲解说能力。2025年10月29日主动报名并确认为团队组长",
+          "hobbies": ["制作卡牌游戏", "二创游戏", "团队合作"],
+          "achievements": ["雅思7.5", "数学俱乐部成员", "二创游戏457位玩家", "团队组长（10.29确认）"],
+          "github": "shaoqingzhang",
+          "githubStatus": "invited",
+          "teamLeader": true,
+          "teamLeaderSince": "2025-10-29",
+          "aliases": {
+            "wechat": ["Sober.", "Sober__Mike"],
+            "github": "shaoqingzhang",
+            "projectGroup": ["Sober.", "张绍卿"]
+          },
+          "avatars": {
+            "wechat": "intel/超脑AI线上黑客松1_5-星际寻呼机项目(50196786440@chatroom)/avatar/wxid_5hrvhnyoa4nr22.png",
+            "github": "https://github.com/shaoqingzhang.png",
+            "fallback": "张"
+          }
+        },
+        {
+          "id": "dengzixiang",
+          "name": "邓子翔",
+          "age": "七升八",
+          "role": "软件组 - 前端开发",
+          "skills": ["前端技术栈", "Python/C++", "AI工具专家"],
+          "status": "pending",
+          "avatar": "邓",
+          "description": "比较i的人，MBTI是探险家，学习适应能力强",
+          "hobbies": ["安静思考", "数学", "不喜欢熬夜"],
+          "achievements": ["AI工具使用专家", "openai花费20美刀"],
+          "github": "Jonas1mposter",
+          "githubStatus": "invited",
+          "aliases": {
+            "wechat": ["Sober__Mike", "Mike", "Jonas1mposter"],
+            "github": "Jonas1mposter",
+            "projectGroup": ["Jonas1mposter", "Sober__Mike", "Mike"],
+            "commonName": "Mike"
+          },
+          "avatars": {
+            "wechat": "intel/超脑AI线上黑客松1_5-星际寻呼机项目(50196786440@chatroom)/avatar/wxid_6jmlv1jp1t3e22.png",
+            "github": "https://github.com/Jonas1mposter.png",
+            "fallback": "邓"
+          }
+        },
+        {
+          "id": "linhongyi",
+          "name": "林弘毅",
+          "age": "未知",
+          "role": "ID设计组 - 新成员（协助赵天朗）",
+          "skills": ["正在熟悉项目"],
+          "status": "pending",
+          "avatar": "林",
+          "description": "新加入团队，正在熟悉项目",
+          "hobbies": [],
+          "achievements": ["快速掌握AI协作流程", "指导其他成员"],
+          "github": "Henrylin2011",
+          "githubStatus": "invited",
+          "aliases": {
+            "wechat": ["Henry林"],
+            "github": "Henrylin2011",
+            "projectGroup": "Henry林"
+          },
+          "avatars": {
+            "wechat": "intel/超脑AI线上黑客松1_5-星际寻呼机项目(50196786440@chatroom)/avatar/wxid_ehh7xns32tm522.png",
+            "github": "https://github.com/Henrylin2011.png",
+            "fallback": "林"
+          }
+        },
+        {
+          "id": "xiazihao",
+          "name": "夏梓皓",
+          "age": 13,
+          "role": "硬件组 - 新成员（协助蒋浩轩）",
+          "skills": ["Python/C++基础", "AI使用熟练", "创意丰富"],
+          "status": "pending",
+          "avatar": "夏",
+          "description": "六边形战士，怪点子多，游戏了解深入",
+          "hobbies": ["读书", "钢琴", "米家游戏", "复刻废墟图书馆"],
+          "achievements": ["AI使用熟练", "英语好", "半吊子物理化学"],
+          "github": "Xiazihao-Sxzx1622",
+          "githubStatus": "invited",
+          "githubRegistered": "2025-10-26",
+          "issues": [],
+          "aliases": {
+            "wechat": ["对方正在输入. . .", "夏梓皓"],
+            "github": "Xiazihao-Sxzx1622",
+            "projectGroup": "夏梓皓"
+          },
+          "avatars": {
+            "wechat": "intel/超脑AI线上黑客松1_5-星际寻呼机项目(50196786440@chatroom)/avatar/wxid_xnovgo8j9vnk22.png",
+            "wechatPersonal": "intel/夏梓皓(wxid_xnovgo8j9vnk22)/avatar/wxid_xnovgo8j9vnk22.png",
+            "github": "https://github.com/Xiazihao-Sxzx1622.png",
+            "fallback": "夏"
+          }
+        }
+      ]
+    },
+    {
+      "id": "online_learning",
+      "name": "游戏化线上共学组",
+      "description": "负责AI技能树学习平台的开发",
+      "members": [
+        {
+          "id": "gaoyunyi",
+          "name": "高云仪",
+          "age": 11,
+          "role": "线上共学 - 队长",
+          "skills": ["图形化编程三级", "Python五级", "C++ gesp1级"],
+          "status": "active",
+          "avatar": "高",
+          "description": "外向开朗，很会造梗，节奏感非常好",
+          "hobbies": ["钢琴8级", "鼓号队小军鼓手", "游戏+画画"],
+          "achievements": [
+            "图形化编程三级合格",
+            "Python五级合格",
+            "C++ gesp1级合格",
+            "蓝桥杯上海市三等奖",
+            "青科赛上海市三等奖"
+          ],
+          "games": ["崩坏星穹铁道", "绝区零", "超自然行动组", "世界计划", "我的世界", "鸣潮", "三角洲行动"]
+        },
+        {
+          "id": "taoyijia",
+          "name": "陶奕嘉",
+          "age": 13,
+          "role": "线上共学 - 硬件创新",
+          "skills": ["半导体制作", "硬件创新", "华为开发者大赛获奖"],
+          "status": "progress",
+          "avatar": "陶",
+          "description": "有点内向，但对认识的人会显得开朗，有创造力",
+          "hobbies": ["电脑", "无人机", "模拟飞行", "123D建模"],
+          "achievements": [
+            "第三十七届上海市青少年科技创新大赛三等奖",
+            "第十七届宋庆龄少年儿童发明奖",
+            "2024年华为开发者大赛•少年开发者人工智能大赛AIGC创意活动优秀作品奖"
+          ],
+          "games": ["pubg", "cs2", "三角洲行动", "我的世界"]
+        }
+      ]
+    },
+    {
+      "id": "hardware_mentors",
+      "name": "AI智能随身硬件组 - 导师团队",
+      "description": "负责星际寻呼机硬件项目的导师团队",
+      "members": [
+        {
+          "id": "haodehong",
+          "name": "郝德宏",
+          "role": "项目导师",
+          "skills": ["硬件开发", "项目架构", "技术指导"],
+          "status": "active",
+          "avatar": "郝",
+          "description": "项目导师，负责技术指导和项目架构",
+          "aliases": {
+            "wechat": ["郝德宏", "haodehong123"],
+            "projectGroup": "郝德宏"
+          },
+          "avatars": {
+            "wechat": "intel/超脑AI线上黑客松1_5-星际寻呼机项目(50196786440@chatroom)/avatar/haodehong123.png",
+            "fallback": "郝"
+          }
+        },
+            {
+              "id": "jiangxuning",
+              "name": "姜徐宁",
+              "role": "项目领航员",
+              "skills": ["AI工具使用", "团队协调", "技术支持"],
+              "status": "active",
+              "avatar": "姜",
+              "description": "项目领航员，负责AI工具使用指导和团队协调",
+              "github": "stoic42",
+              "githubStatus": "invited",
+              "aliases": {
+                "wechat": ["L1_", "领航员-小姜", "领航员-小姜（全肯定版）"],
+                "github": "stoic42",
+                "projectGroup": ["L1_", "领航员-小姜"],
+                "commonName": ["小姜", "姜姜子"]
+              },
+              "avatars": {
+                "wechat": "intel/超脑AI线上黑客松1_5-星际寻呼机项目(50196786440@chatroom)/avatar/wxid_fn7qurlrm2ea22.png",
+                "github": "https://github.com/stoic42.png",
+                "fallback": "姜"
+              }
+            },
+        {
+          "id": "lele",
+          "name": "乐乐",
+          "role": "项目案主",
+          "skills": ["项目金主", "5000元奖金提供方", "任务发布"],
+          "status": "active",
+          "avatar": "乐",
+          "description": "项目案主，提供5000元奖金和任务发布",
+          "aliases": {
+            "wechat": ["傻乐同学"],
+            "projectGroup": "傻乐同学"
+          },
+          "avatars": {
+            "wechat": "intel/超脑AI线上黑客松1_5-星际寻呼机项目(50196786440@chatroom)/avatar/yangweile001.png",
+            "fallback": "乐"
+          }
+        }
+      ]
+    },
+    {
+      "id": "software_mentors",
+      "name": "游戏化线上共学组 - 导师团队",
+      "description": "负责AI技能树学习平台的导师团队",
+      "members": [
+        {
+          "id": "michael_software",
+          "name": "Michael (王佳梁)",
+          "role": "项目案主",
+          "skills": ["项目金主", "战略规划", "产品设计"],
+          "status": "active",
+          "avatar": "M",
+          "description": "游戏化线上共学组案主，负责项目金主和战略规划"
+        },
+        {
+          "id": "panyupeng",
+          "name": "潘玉鹏 (预见)",
+          "role": "项目导师",
+          "skills": ["软件开发", "架构设计", "教学指导"],
+          "status": "active",
+          "avatar": "潘",
+          "description": "项目导师，负责软件开发教学和架构设计"
+        },
+        {
+          "id": "aiken",
+          "name": "Aiken (赶稿版)",
+          "role": "项目领航员",
+          "skills": ["技术指导", "工具配置", "学员支持"],
+          "status": "active",
+          "avatar": "A",
+          "description": "项目领航员，负责技术指导和工具配置"
+        }
+      ]
+    },
+    {
+      "id": "core_management",
+      "name": "核心管理团队",
+      "description": "超脑总负责人和核心管理团队",
+      "members": [
+        {
+          "id": "michael_core",
+          "name": "Michael (王佳梁)",
+          "role": "超脑总负责人",
+          "skills": ["战略规划", "团队管理", "产品设计"],
+          "status": "active",
+          "avatar": "M",
+          "description": "超脑总负责人，负责战略规划和整体管理"
+        },
+        {
+          "id": "chunyang",
+          "name": "春杨",
+          "role": "项目协调员",
+          "skills": ["学员沟通", "项目协调", "答疑助教"],
+          "status": "active",
+          "avatar": "春",
+          "description": "项目协调员，负责学员沟通和项目协调",
+          "github": "chunyang2025-bit",
+          "githubStatus": "invited",
+          "aliases": {
+            "wechat": ["超脑-春杨", "Umi"],
+            "github": "chunyang2025-bit",
+            "projectGroup": "超脑-春杨"
+          },
+          "avatars": {
+            "wechat": "intel/超脑AI线上黑客松1_5-星际寻呼机项目(50196786440@chatroom)/avatar/wxid_a3fe6td4nw9321.png",
+            "github": "https://github.com/chunyang2025-bit.png",
+            "fallback": "春"
+          }
+        },
+        {
+          "id": "linlu",
+          "name": "林潞",
+          "role": "Backup支持",
+          "skills": ["团队管理", "学员指导", "流程优化"],
+          "status": "active",
+          "avatar": "林",
+          "description": "Backup支持，负责团队管理和学员指导",
+          "github": "LCubed101",
+          "githubStatus": "invited",
+          "aliases": {
+            "wechat": ["Linlu", "Dwen"],
+            "github": "LCubed101",
+            "projectGroup": "Linlu"
+          },
+          "avatars": {
+            "wechat": "intel/超脑AI线上黑客松1_5-星际寻呼机项目(50196786440@chatroom)/avatar/wxid_977f6dg20rqz22.png",
+            "github": "https://github.com/LCubed101.png",
+            "fallback": "林"
+          }
+        }
+      ]
+    },
+    {
+      "id": "recording_team",
+      "name": "全程记录团队",
+      "description": "负责Build in Public全程记录",
+      "members": [
+        {
+          "id": "christina",
+          "name": "Christina",
+          "role": "Build in Public记录官",
+          "skills": ["全程记录", "内容运营", "小红书管理"],
+          "status": "active",
+          "avatar": "C",
+          "description": "Build in Public记录官，负责全程记录和内容运营"
+        }
+      ]
+    }
+  ],
+  "statistics": {
+    "totalMembers": 8,
+    "totalMentors": 8,
+    "activeMembers": 2,
+    "pendingMembers": 5,
+    "offlineMembers": 1,
+    "completionRate": 83
+  }
+}
